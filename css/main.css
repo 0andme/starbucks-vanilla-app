@@ -1,0 +1,100 @@
+/* 공통 COMMON */
+body {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 1.4;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+header {
+  background-color: royalblue;
+}
+
+header .inner {
+  width: 1100px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+
+  background-color: orange;
+}
+
+header .logo {
+  height: 75px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+  display: none;
+}
+
+/* sun-menu */
+header .sub-menu {
+  /* display: flex; */
+}
+
+/* ul */
+header .sub-menu ul.menu {
+  font-family: Arial,sans-serif;
+  display: flex;
+  /* justify-content: center; */
+
+}
+
+header .sub-menu ul.menu li {
+  position: relative;
+}
+
+header .sub-menu ul.menu li::before {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background: #e5e5e5;
+  position: absolute;
+  /* position: absolute; 했으므로 자동으로 
+  블록으로 됨.  그냥 둬도 OK 
+  display: block; */
+
+  top:0;
+  bottom: 0;
+  margin: auto 0;
+}
+header .sub-menu ul.menu li:first-child::before {
+  display: none;
+}
+
+header .sub-menu ul.menu li a {
+  border: 1px solid r;
+  /* background-color: white; */
+  font-size: 12px;
+  padding: 11px 16px;
+  display: block;
+  color: #656565;
+
+  /* line-height: 50px; 이거는 안됌*/
+  /* display: inline-block; */
+
+}
+
+header .sub-menu ul.menu li a:hover {
+  color: #000;
+
+}
+
+/* search */
+header .sub-menu .search {}
+
+header .sub-menu .search input {}
+
+header .sub-menu .search .material-icons {}
