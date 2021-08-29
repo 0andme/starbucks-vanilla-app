@@ -20,9 +20,13 @@ https://github.com/ParkYoungWoong/starbucks-vanilla-app#%EC%98%A4%ED%94%88-%EA%B
 
 웹페이지가 소셜 미디어로 공유될 때 우선적으로 활용되는 정보를 지정
 링크를 보냈을 때 뜨는 미리보기를 지정할 수 있음
+
 `슬랙`
+
 ![image](https://raw.githubusercontent.com/ParkYoungWoong/starbucks-vanilla-app/master/_assets/slack_message_og_example.jpg)
+
 `카카오톡`
+
 ![image](https://raw.githubusercontent.com/ParkYoungWoong/starbucks-vanilla-app/master/_assets/kakao_og_example.jpg)
 
 https://ogp.me/
@@ -54,6 +58,7 @@ https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-
 구글폰트사이트 https://fonts.google.com/
 
 ![image](https://user-images.githubusercontent.com/83719746/131094338-2ea7f2af-e11c-49c5-878d-099e05e11326.png)
+
 폰트 설정을 따로 하지 않았을 때 위와 같이 브러우저마다 (크롬과 IE)다르게 적용되고 있음
 
 1. in HTML) CSS파일에 적용하고자 하는 것이므로 main.css 를 link한 코드 위쪽에 폰트를 link를 하자
