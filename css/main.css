@@ -17,7 +17,8 @@ a {
 
 /* header */
 header {
-  background-color: royalblue;
+  background-color: #f6f5f0;
+  border-bottom: 1px solid #c8c8c8;
 }
 
 header .inner {
@@ -26,7 +27,7 @@ header .inner {
   margin: 0 auto;
   position: relative;
 
-  background-color: orange;
+ 
 }
 
 header .logo {
@@ -36,17 +37,21 @@ header .logo {
   bottom: 0;
   left: 0;
   margin: auto 0;
-  display: none;
+  /* display: none; */
 }
 
 /* sun-menu */
 header .sub-menu {
-  /* display: flex; */
+  position: absolute;
+  top: 10px;
+  right: 0;
+
+  display: flex;
 }
 
 /* ul */
 header .sub-menu ul.menu {
-  font-family: Arial,sans-serif;
+  font-family: Arial, sans-serif;
   display: flex;
   /* justify-content: center; */
 
@@ -66,10 +71,11 @@ header .sub-menu ul.menu li::before {
   블록으로 됨.  그냥 둬도 OK 
   display: block; */
 
-  top:0;
+  top: 0;
   bottom: 0;
   margin: auto 0;
 }
+
 header .sub-menu ul.menu li:first-child::before {
   display: none;
 }
@@ -93,8 +99,46 @@ header .sub-menu ul.menu li a:hover {
 }
 
 /* search */
-header .sub-menu .search {}
+header .sub-menu .search {
+  height: 34px;
+  /* background-color: red; */
+  position: relative;
+}
 
-header .sub-menu .search input {}
+header .sub-menu .search input {
+  width: 36px;
+  height: 34px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
 
-header .sub-menu .search .material-icons {}
+  background-color: #fff;
+
+  font-size: 12px;
+  color: #777;
+
+  transition: width .4s;
+
+}
+
+header .sub-menu .search input:focus {
+  width: 190px;
+  border-color: #669900;
+}
+
+header .sub-menu .search span.material-icons {
+  height: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  margin: auto 0;
+  transition: .4s;
+}
+
+header .sub-menu .search.focused span.material-icons {
+  opacity: 0;
+  /* display: none; */
+}
