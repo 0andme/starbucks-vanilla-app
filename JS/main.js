@@ -52,3 +52,11 @@ fadeEls.forEach(function (fadeEl, index) {
   });
 
 })
+
+// ! 공지사항 스와이퍼
+// new Swiper(선택자,{옵션})
+new Swiper(".notice-line .swiper", {
+  direction: "vertical",
+  autoplay: true,
+  loop:true
+});
