@@ -433,7 +433,7 @@ header .badges .badge {
   margin-right: 20px;
 }
 
-.notice .notice-line .inner__left .swiper-container {
+.notice .notice-line .inner__left .swiper {
   height: 62px;
   flex-grow: 1;
   background-color: orange;
