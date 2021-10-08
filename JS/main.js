@@ -58,5 +58,32 @@ fadeEls.forEach(function (fadeEl, index) {
 new Swiper(".notice-line .swiper", {
   direction: "vertical",
   autoplay: true,
-  loop:true
+  loop: true
 });
+
+// ! 프로모션 카드 스와이퍼
+new Swiper(".promotion .swiper", {
+  // 가로 슬라이드는 기본 옵션
+  direction: "horizontal",
+  // 한 번에 보여줄 슬라이드 개수
+  slidesPerView: 3,
+  // 슬라이드 사이 여백(단위 10px)
+  spaceBetween: 10,
+  // 1번 슬라이드가 가운데 보이기
+  centeredSlides: true,
+  // 마지막 슬라이드가 왼쪽에도 보이게 하기 위함
+  loop: true,
+  // 자동 슬라이드 시간 기본값 : 3000 단위 : ms
+  // autoplay: {delay : 500},
+  // 페이지 번호 요소 선택자
+  pagination: {
+    el: '.promotion .swiper-pagination',
+    // 사용자의 페이지  번호 요소 제어
+    clickable: true
+  },
+  navigation: {
+    prevEl: '.promotion .swiper-prev',
+    nextEl: '.promotion .swiper-next'
+  }
+}
+);
