@@ -390,7 +390,9 @@ header .badges .badge {
   position: relative;
 }
 
-.notice .notice-line {}
+.notice .notice-line {
+  position: relative;
+}
 
 .notice .notice-line .bg-left {
   width: 50%;
@@ -437,14 +439,17 @@ header .badges .badge {
   height: 62px;
   flex-grow: 1;
 }
+
 .notice .notice-line .inner__left .swiper-slide {
-height: 62px;
-display: flex;
-align-items: center;
+  height: 62px;
+  display: flex;
+  align-items: center;
 }
-.notice .notice-line .inner__left .swiper-slide a{
+
+.notice .notice-line .inner__left .swiper-slide a {
   color: #fff;
 }
+
 .notice .notice-line .inner__left .notice-line__more {
   width: 62px;
   height: 62px;
@@ -484,4 +489,40 @@ align-items: center;
 .notice .notice-line .inner__right .toggle-promotion .material-icons {
   font-size: 30px;
   color: #333;
+}
+
+/* 프로모션 카드  */
+.notice .promotion {
+
+  height: 693px;
+  background-color: #f6f5ef;
+  position: relative;
+}
+
+.notice .promotion .swiper {
+  /* width: 2477px; */
+  width: calc(819px * 3 + 2 * 10px);
+  height: 553px;
+
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: calc((819px * 3 + 2 * 10px) / -2);
+}
+
+.notice .promotion .swiper-slide {
+  opacity: .3;
+  transition: opacity 1s;
+  position: relative;
+} 
+.notice .promotion  .swiper-slide-active {
+  opacity: 1;  
+}
+
+.notice .promotion .swiper-slide .btn{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
