@@ -514,15 +514,69 @@ header .badges .badge {
   opacity: .3;
   transition: opacity 1s;
   position: relative;
-} 
-.notice .promotion  .swiper-slide-active {
-  opacity: 1;  
 }
 
-.notice .promotion .swiper-slide .btn{
+.notice .promotion .swiper-slide-active {
+  opacity: 1;
+}
+
+.notice .promotion .swiper-slide .btn {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
+}
+
+/* ! REWARDS */
+.rewards {
+  position: relative;
+}
+
+.rewards .bg-left {
+  width: 50%;
+  height: 100%;
+  background-color: #272727;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.rewards .bg-right {
+  width: 50%;
+  height: 100%;
+  background-color: #d5c798;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.rewards .inner {
+  /* 전역 속성에 position 이미 있음 */
+  background-image: url("../images/rewards.jpg");
+  height: 241px;
+}
+
+.rewards .btn-group {
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+
+  position: absolute;
+  bottom: 24px;
+  right: 0;
+}
+
+.rewards .btn-group .btn.sign-up {
+  margin-right: 10px;
+}
+
+.rewards .btn-group .btn.sign-in {
+  width: 110px;
+}
+
+.rewards .btn-group .btn.gift {
+  margin-top: 10px;
+  /* 늘어날수 있는 만큼 늘어나라 */
+  flex-grow: 1;
 }
